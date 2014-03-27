@@ -36,6 +36,8 @@ main memory, storing the schedule array to main memory, loading initial or
 intermediate hash values from main memory, and storing intermediate or final
 hash values to main memory.
 
+![VPM layout diagram](https://raw.githubusercontent.com/obijywk/qpusha/master/vpmlayout.png)
+
 The program proceeds as follows:
 
  1. Initialization: setup QPU access, allocate and memory-map GPU memory,
