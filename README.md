@@ -6,6 +6,16 @@ Hardware-accelerated SHA-256 hashing on the Raspberry Pi
 This project demonstrates the use of the BCM2835's VideoCore IV Quad Processors
 (QPUs) to compute SHA-256 hashes.
 
+Instructions
+============
+
+To try running the benchmark:
+
+    sudo apt-get install nodejs
+    make
+    sudo mknod char_dev c 100 0
+    sudo ./benchmark
+
 Implementation Notes
 ====================
 
@@ -71,7 +81,7 @@ Performance
 ===========
 
 TODO: need more detailed benchmarks. So far, we seem to be able to achieve
-hundreds of KHash/s.
+around hundreds of KHash/s for small messages.
 
 Future Work
 ===========
@@ -86,6 +96,8 @@ Some things to try to improve performance:
 
  - Keep QPU programs running instead of starting and stopping them between
    message chunks
+
+ - Try a more optimized SHA-256 algorithm instead of the reference pseudocode
 
 References
 ==========

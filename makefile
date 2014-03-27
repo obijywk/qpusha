@@ -1,4 +1,4 @@
-CFLAGS=-O3
+CFLAGS=-DPROFILE -O3
 
 all: benchmark
 
